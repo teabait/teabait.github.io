@@ -1,0 +1,536 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: futura-pt,Futura,Gill Sans,Gill Sans MT,"Trebuchet MS", sans-serif;
+	position: relative;
+	color: #333333;
+	font-size: 18px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.mobile {
+	display: none;
+}
+
+nav {
+	position: fixed;
+	transform: rotateZ(-90deg);
+	top: 300px;
+	top: 316px;
+    left: -79px;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-size: 1.25rem;
+	color: #333333;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 0 2em;	
+	display: inline-block;
+	text-decoration: none;
+	padding-bottom: 4px;
+	border-bottom: 6px solid #F1FF00;
+}
+
+nav a:hover, nav a:focus {
+	background: #F1FF00;
+}
+
+h1, h2, h3 {
+	font-weight: 700;
+	font-style: normal;
+}
+
+h1 {
+	font-size: 4rem;
+	margin-bottom: .5rem;
+}
+
+h2 {
+	font-size: 3rem;
+	margin-bottom: .5rem;
+}
+
+h3 {
+	text-transform: uppercase;
+	margin-bottom: .75rem;
+}
+
+p {
+	line-height: 1.4;
+}
+
+.subheader {
+	font-size: 1.25rem;
+	line-height: 1.7;
+	margin-bottom: .25em;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: .5px;
+}
+
+h1 + .subheader {
+	font-size: 1.5rem;
+}
+
+h2 + .subheader {
+	font-weight: 700;
+	font-size: 1.5rem;
+	margin-bottom: 6.25rem;
+}
+
+section {
+	max-width: 940px;
+	margin: 10rem auto;
+    padding: 2em 0;
+	position: relative;
+}
+
+.work, .ideas, .contact {
+	text-align: center;
+}
+
+p.discreet {
+	font-size: 1rem;
+	color: #606060;
+}
+
+a.button {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 700;
+	border: 3px solid #F1FF00;
+	padding: 1rem 2rem;
+	text-decoration: none;
+	margin: 2rem 1rem 1rem;
+	color: #333333;
+}
+
+a.button:hover, a.button:focus {
+	background: #F1FF00;
+}
+
+.color-block {
+	background: #F1FF00;
+	position: absolute;
+	z-index: -1;
+}
+
+.intro-img-wrapper {
+	display: inline-block;
+}
+
+.intro {
+	margin: 7rem auto;
+}
+
+.intro img {
+	width: 353px;
+}
+
+.intro .color-block {
+	width: 357px;
+	height: 511px;
+    top: -20px;
+    margin-left: 20px;
+
+}
+
+.blurb {
+	display: inline-block;
+	max-width: 539px;
+    margin-left: 47px;
+    margin-top: 9em;
+    position: absolute;
+}
+
+.about {
+	position: relative;
+	margin-top: 3rem;
+}
+
+.about .subheader {
+	max-width: 700px;
+}
+
+.about .color-block {
+	width: 300px;
+	height: 98px;
+	transform: rotateZ(30deg);
+	right: 0;
+}
+
+.work .color-block {
+	width: 170px;
+	height: 148px;
+	transform: rotateZ(-110deg);
+	margin-left: 50%;
+    top: 40px;
+    left: -226px;
+}
+
+.ideas .color-block.one {
+	width: 141px;
+	height: 144px;
+	transform: rotateZ(-68deg);
+    margin-right: 50%;
+    top: 0px;
+    right: -206px;
+}
+
+.ideas .color-block.two {
+	width: 31px;
+	height: 237px;
+	transform: rotateZ(-230deg);
+    margin-right: 50%;
+    bottom: 0px;
+    left: 204px;
+}
+
+.contact .color-block {
+	height: 94px;
+	width: 94px;
+	transform: rotateZ(-130deg);
+	margin-left: 50%;
+    top: -10px;
+    left: -154px;
+}
+
+.portfolio li {
+	display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+	vertical-align: top;
+}
+
+.portfolio img {
+	width: 100%;
+	max-width: 300px;
+	margin-bottom: 1.5rem;
+}
+
+.desc {
+	height: 100px;
+}
+
+.ideas li {
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 3%;
+}
+
+.ideas li:last-of-type {
+	margin-right: 0;
+}
+
+.row {
+	margin-bottom: 5rem;
+}
+
+.contact h2 {
+	margin-bottom: 3.5rem;
+}
+
+.contact .subheader {
+	margin-bottom: 3rem;
+}
+
+.links li {
+	display: block;
+	margin: 2rem;
+}
+
+.links a {
+	color: #333333;
+	font-size: 1.5rem;
+}
+
+.overlay {
+	display: none;
+	width: 100%;
+	max-width: 940px;
+	border: 1px solid #F1FF00;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background: white;
+    z-index: 1000;
+    text-align: center;
+    box-shadow: 4px 4px 0 0 rgba(0,0,0,0.075);
+    padding: 2rem;
+}
+
+.overlay.wispy {
+	height: 550px;
+}
+
+.overlay.active {
+	display: block;
+}
+
+.blur {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	background: rgba(251,251,251,.95);
+}
+
+a.close {
+	position: absolute;
+    right: 0;
+    top: 0;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+}
+a.close:hover, a.close:focus {
+	text-decoration: underline;
+}
+
+.view-options li {
+	padding: 1em;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 1em 0;
+}
+
+.view-options img {
+	width: 200px;
+	display: block;
+	border: 1px solid #dcdcdc;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 1300px) {
+  nav {
+    left: -200px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  nav {
+    position: fixed;
+    transform: none;
+    top: 0;
+    left: auto;
+    width: 100%;
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    z-index: 1;
+  }
+
+  .view-options li {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width: 934px) {
+	.intro {
+		margin: 7rem auto 4rem;
+	}
+	section {
+		margin: 4rem auto;
+	}
+
+	.blurb {
+		margin-top: 6rem;
+	}
+
+	.desc {
+		min-height: 140px;
+	}
+
+	.portfolio li {
+  		margin-right: 10px;
+  	}
+
+  	.view-options li {
+		margin: .5rem;
+	}
+
+	.view-options img {
+		width: 100px;
+	}
+
+	.view-options a.button {
+	    margin: .5rem;	
+	}
+}
+
+@media only screen and (max-width: 710px) {
+	.intro .color-block {
+		display: none;
+	}
+
+	.ideas .color-block.two {
+		bottom: 560px;
+		left: 74px;
+	}
+
+	section {
+		margin: 1rem auto;
+		padding: 1rem;
+	}
+	.desktop {
+		display: none;
+	}
+	.mobile {
+		display: block;
+	}
+	.intro-img-wrapper {
+		width: 25%;
+	}
+
+	.intro .color-block {
+		width: 25%;
+    	height: 25%;
+	}
+
+	section.intro {
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.intro img {
+		width: 100%;
+	}
+
+	.about {
+		margin: 1rem 0;
+	}
+
+	.blurb {
+		margin: 0;
+    	padding: 0 1rem;
+    	font-size: 1.5rem;
+    	position: relative;
+	}
+
+	.blurb .subheader {
+		margin-bottom: 2rem;
+	}
+
+	nav {
+		position: relative;
+		padding: 1rem 0;
+		margin-top: 1rem;
+	}
+
+	nav a {
+		margin: 0 1rem;
+		font-size: 1rem;
+		border-bottom: 6px solid transparent;
+	}
+
+	nav a:hover, nav a.active {
+		background: transparent;
+		border-bottom: 6px solid #F1FF00;
+	} 
+
+	h1 {
+		font-size: 3rem;
+		padding-right: 1rem;
+	}
+
+	h2 + .subheader {
+		margin-bottom: 2rem;
+	}
+
+	a.button {
+		color: #333333;
+		margin-top: 1rem;
+	}
+
+	.subheader.mobile {
+		margin-top: 2rem;
+	}
+
+	.about .color-block {
+		display: none;
+	}
+
+	.portfolio li {
+		display: block;
+    	width: 100%;
+    	margin: 2rem 0;
+    	border-bottom: 1px solid #ededed;
+    	padding-bottom: 2rem;
+	}
+
+	.portfolio li:last-of-type {
+		border-bottom: 0;
+	}
+
+	.desc {
+		min-height: auto;
+		height: auto;
+	}
+
+	.row {
+		margin-bottom: 0;
+	}
+
+	.ideas li {
+		margin-bottom: 2rem;
+    	width: 300px;
+	}
+
+	.show {
+		display: block;
+	}
+
+	.sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		margin-top: 0;
+	}
+
+	.overlay.wispy {
+		height: 700px;
+	}
+
+	.view-options {
+		text-align: left;
+		padding: 2em 1em;
+	}
+
+	.view-options img {
+		width: 80px;
+    	float: left;
+	}
+
+	.overlay.wispy {
+		height: 600px;
+	}
+
+	/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+	.sticky + .content {
+		padding-top: 60px;
+	}
+
+	.pad-top {
+		padding-top: 80px;
+	}
+}
