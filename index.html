@@ -202,6 +202,9 @@ $('.overlay-button').click(function(e){
 	e.preventDefault();
 	$targetOverlay = $("#" + $(this).attr('id') + "-overlay");
 	$targetOverlay.addClass('active');
+	if ($(window).width() < 710) {
+	   window.scrollTo(0,0);
+	}
 	$('.blur').show();
 });
 
