@@ -72,6 +72,12 @@ p {
 	line-height: 1.4;
 }
 
+p.site-by {
+	color: #bdbdbd;
+	text-align: center;
+	padding: 2em;
+}
+
 .subheader {
 	font-size: 1.25rem;
 	line-height: 1.7;
