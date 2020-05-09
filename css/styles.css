@@ -7,6 +7,7 @@ body {
 	position: relative;
 	color: #333333;
 	font-size: 18px;
+	max-width: 100%;
 }
 
 * {
@@ -512,13 +513,21 @@ a.close:hover, a.close:focus {
 	}
 
 	.view-options {
-		text-align: left;
-		padding: 2em 1em;
+		text-align: center;
+		padding: 0;
 	}
 
 	.view-options img {
-		width: 80px;
-    	float: left;
+		display: none;
+	}
+
+	.view-options li {
+		margin: 1rem 0;
+		width: 100%;
+	}
+
+	.view-options a.button {
+		width: 100%;
 	}
 
 	.overlay.wispy {
