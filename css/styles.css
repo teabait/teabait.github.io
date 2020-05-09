@@ -438,7 +438,7 @@ a.close:hover, a.close:focus {
 	}
 
 	nav a {
-		margin: 0 1rem;
+		margin: 0 .3em;
 		font-size: 1rem;
 		border-bottom: 6px solid transparent;
 	}
