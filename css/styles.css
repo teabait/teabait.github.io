@@ -528,6 +528,7 @@ a.close:hover, a.close:focus {
 	.overlay.active {
 		top: 0;
 		left: 0;
+		transform: none;
 	}
 
 	.overlay iframe {
