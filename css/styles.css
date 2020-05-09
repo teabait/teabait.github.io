@@ -392,6 +392,12 @@ a.close:hover, a.close:focus {
 		display: none;
 	}
 
+	.ideas .color-block.one {
+		margin-right: 50%;
+    	top: 0px;
+    	right: -126px;
+	}
+
 	.ideas .color-block.two {
 		bottom: 560px;
 		left: 74px;
