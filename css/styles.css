@@ -289,6 +289,10 @@ a.button:hover, a.button:focus {
 	display: block;
 }
 
+.overlay a {
+	color: #333333;
+}
+
 .blur {
 	display: none;
 	position: absolute;
@@ -542,6 +546,10 @@ a.close:hover, a.close:focus {
 
 	.view-options a.button {
 		width: 100%;
+	}
+
+	.overlay {
+		padding-top: 4em;
 	}
 
 	.overlay.wispy {
