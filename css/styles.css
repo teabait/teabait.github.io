@@ -112,6 +112,11 @@ p.discreet {
 	color: #606060;
 }
 
+.subheader a {
+	color: #333333;
+	text-decoration: none;
+}
+
 a.button {
 	display: inline-block;
 	text-transform: uppercase;
