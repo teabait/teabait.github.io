@@ -232,10 +232,10 @@ a.button:hover, a.button:focus {
 }
 
 .ideas li {
-	width: 30%;
+	width: 31%;
 	display: inline-block;
 	vertical-align: top;
-	margin-right: 3%;
+	margin-right: 2%;
 }
 
 .ideas li:last-of-type {
