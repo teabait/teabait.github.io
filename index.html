@@ -54,7 +54,7 @@
 			<li><a  class="active" href="#about">About</a></li>
 			<li><a href="#work">Portfolio</a></li>
 			<li><a href="#ideas">Free Ideas</a></li>
-			<li><a href="#contact">Contact</a></li>
+			<li><a id="mobile-contact-link" href="#contact">Contact</a></li>
 		</ul>
 	</nav>
 	<section class="about mobile" id="about">
@@ -199,6 +199,40 @@ function stickyNavigation() {
 }
 
 window.addEventListener('scroll', stickyNavigation);
+
+// HIGHLIGHT ACTIVE LINK
+var topMenu = $("#mobile-nav"),
+    topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+
+   // Get id of current scroll item
+   	var cur = scrollItems.map(function(){
+    	if ($(this).offset().top < fromTop)
+       	return this;
+   	});
+   	// Get the id of the current element
+   	cur = cur[cur.length-1];
+   	var id = cur && cur.length ? cur[0].id : "";
+   	// Set/remove active class
+	menuItems.removeClass("active");
+	menuItems.filter("[href='#"+id+"']").addClass("active");
+	if($(window).scrollTop() + $(window).height() == $(document).height()) {
+			menuItems.removeClass("active");
+	   $("#mobile-contact-link").addClass("active");
+	}
+});
+
 
 // SMOOTH SCROLL
 $('#mobile-nav a').click(function(){
