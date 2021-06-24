@@ -269,6 +269,10 @@ a.button:hover, a.button:focus {
 	font-size: 1.5rem;
 }
 
+.contact a {
+	color: #333333;
+}
+
 .overlay {
 	display: none;
 	width: 100%;
