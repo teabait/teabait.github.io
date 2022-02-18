@@ -23,7 +23,7 @@ body {
 nav {
 	position: fixed;
 	transform: rotateZ(-90deg);
-	top: 343px;
+	top: 343px;</a>h4
     left: -79px;
 }
 
@@ -47,7 +47,7 @@ nav a:hover, nav a:focus {
 	background: #F1FF00;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
 	font-weight: 700;
 	font-style: normal;
 }
@@ -65,6 +65,10 @@ h2 {
 h3 {
 	text-transform: uppercase;
 	margin-bottom: .75rem;
+}
+
+h4 {
+	margin: 4rem 0 1rem 0;
 }
 
 p {
@@ -250,6 +254,10 @@ a.button:hover, a.button:focus {
 
 .ideas li:last-of-type {
 	margin-right: 0;
+}
+
+.rep {
+	margin: .5rem;
 }
 
 .row {
