@@ -93,6 +93,7 @@ p.site-by {
 .block-text {
 	font-size: 2rem;
     margin-bottom: 1em;
+    max-width: 23em;
 }
 
 h1 + .subheader {
