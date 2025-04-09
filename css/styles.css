@@ -52,6 +52,10 @@ h1, h2, h3, h4 {
 	font-style: normal;
 }
 
+h1 {
+	color: transparent;
+}
+
 .h1 {
 	font-size: 4rem;
 	margin-bottom: .5rem;
@@ -511,6 +515,11 @@ a.close:hover, a.close:focus {
 
 	.about .color-block {
 		display: none;
+	}
+
+	.block-text {
+		font-size: 1.5rem;
+		font-weight: bold;
 	}
 
 	.portfolio li {
