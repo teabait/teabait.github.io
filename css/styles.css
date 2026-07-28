@@ -91,7 +91,7 @@ p.site-by {
 .subheader {
 	font-size: 1.25rem;
 	line-height: 1.7;
-	margin-bottom: .25em;
+	margin-bottom: 1.25em;
 	font-weight: 400;
 	font-style: normal;
 	letter-spacing: .5px;
@@ -132,6 +132,10 @@ p.discreet {
 .subheader a {
 	color: #200005;
 	text-decoration: none;
+}
+
+em {
+	font-style: italic;
 }
 
 a.button {
