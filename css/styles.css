@@ -151,7 +151,8 @@ a.button:hover, a.button:focus {
 }
 
 .color-block {
-	background: #ffd15f;
+	/*background: #ffd15f;*/
+	background: #f8dd97;
 	position: absolute;
 	z-index: -1;
 }
@@ -170,14 +171,6 @@ a.button:hover, a.button:focus {
     width: 50px;
     height: 60px;
     transform: rotate(-137deg);
-}
-
-.intro .color-block.four {
-    top: -600px;
-    left: -30px;
-    width: 50px;
-    height: 130px;
-    transform: rotate(-151deg);
 }
 
 .intro-img-wrapper {
