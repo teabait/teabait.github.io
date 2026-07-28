@@ -6,11 +6,11 @@ html {
 body {
 	font-family: futura-pt,Futura,Gill Sans,Gill Sans MT,"Trebuchet MS", sans-serif;
 	position: relative;
-	color: #200005;
+	color: #ccb37e;
 	font-size: 18px;
 	width: 100%;
 	box-sizing: border-box;
-	background: #fcf0d7;
+	background: #25060a;
 }
 
 * {
@@ -155,8 +155,7 @@ a.button:hover, a.button:focus {
 }
 
 .color-block {
-	/*background: #ffd15f;*/
-	background: #f8dd97;
+	background: #420a12;
 	position: absolute;
 	z-index: -1;
 }
@@ -307,12 +306,12 @@ a.button:hover, a.button:focus {
 }
 
 .links a {
-	color: #200005;
+	color: #ccb37e;
 	font-size: 1.5rem;
 }
 
 .contact a {
-	color: #200005;
+	color: #ccb37e;
 }
 
 .overlay {
